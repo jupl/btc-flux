@@ -1,10 +1,12 @@
 'use strict';
 
-var Store = require('lib/store');
-var observable = require('lib/dispatcher').ofStore('view');
-var store = new Store();
-module.exports = store.exportable();
+var dispatcher = require('lib/dispatcher');
+var observable = dispatcher.ofStore('view');
+var storeFromObservable = require('lib/store-from-observable');
+var subject = new Rx.BehaviorSubject();
+
+module.exports = storeFromObservable(subject);
 
 observable.ofAction('update').subscribe(function(view) {
-  store.onNext(view);
+  subject.onNext(view);
 });

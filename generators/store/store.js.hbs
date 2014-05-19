@@ -1,8 +1,10 @@
 'use strict';
 
-var Store = require('lib/store');
-var observable = require('lib/dispatcher').ofStore('{{dasherize name}}');
-var store = new Store();
-module.exports = store.exportable();
+var dispatcher = require('lib/dispatcher');
+var observable = dispatcher.ofStore('{{dasherize name}}');
+var storeFromObservable = require('lib/store-from-observable');
+var subject = new Rx.Subject();
+
+module.exports = storeFromObservable(subject);
 
 // observable.ofAction('action').subscribe(...);
