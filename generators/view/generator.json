@@ -1,0 +1,10 @@
+{
+  "description": "test file for site testing with WebDriverJS",
+  "files": [
+    {
+      "from": "view.jsx.hbs",
+      "to": "app/views/{{dasherize name}}.jsx"
+    }
+  ],
+  "dependencies": []
+}

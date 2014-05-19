@@ -1,0 +1,22 @@
+{
+  "name": "package-name",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "rxjs": "~2.2.20",
+    "normalize-css": "~3.0.0",
+    "react": "~0.10.0",
+    "routie": "~0.3.2"
+  },
+  "overrides": {
+    "rxjs": {
+      "main": [
+        "rx.lite.compat.js",
+        "rx.testing.js"
+      ]
+    }
+  }
+}

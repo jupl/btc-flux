@@ -1,0 +1,8 @@
+'use strict';
+
+var Store = require('lib/store');
+var observable = require('lib/dispatcher').ofStore('{{dasherize name}}');
+var store = new Store();
+module.exports = store.exportable();
+
+// observable.ofAction('action').subscribe(...);
