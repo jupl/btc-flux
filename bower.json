@@ -13,10 +13,7 @@
   },
   "overrides": {
     "rxjs": {
-      "main": [
-        "rx.lite.compat.js",
-        "rx.testing.js"
-      ]
+      "main": "rx.lite.compat.js"
     }
   }
 }
