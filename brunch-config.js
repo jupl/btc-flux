@@ -16,6 +16,11 @@ exports.config = {
     },
     react: {
       autoIncludeCommentBlock: true
+    },
+    groundskeeper: {
+      console: false,
+      debugger: false,
+      pragmas: ['validation', 'development']
     }
   },
 

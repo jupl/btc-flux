@@ -65,7 +65,7 @@ TODO
 ## Libraries
 
 ### Core
-- [BTC](https://github.com/jupl/btc) 0.10.4
+- [BTC](https://github.com/jupl/btc) 0.11.1
 
 ### Languages
 - [Stylus](https://github.com/learnboost/stylus)
